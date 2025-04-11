@@ -1,0 +1,277 @@
+{
+  "HTML5 Boilerplate": {
+    "prefix": "tch-html5",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"pt-BR\">",
+      "<head>",
+      "  <meta charset=\"UTF-8\">",
+      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+      "  <meta name=\"description\" content=\"$1\">",
+      "  <title>$2</title>",
+      "</head>",
+      "<body>",
+      "  $3",
+      "</body>",
+      "</html>"
+    ],
+    "description": "TCH: Estrutura básica do HTML5"
+  },
+  "Link CSS externo": {
+    "prefix": "tch-linkcss",
+    "body": [
+      "<link rel=\"stylesheet\" href=\"$1\">"
+    ],
+    "description": "TCH: Importa um arquivo CSS externo"
+  },
+  "Script JS externo": {
+    "prefix": "tch-scriptjs",
+    "body": [
+      "<script src=\"$1\"></script>"
+    ],
+    "description": "TCH: Importa um arquivo JavaScript"
+  },
+  "Imagem": {
+    "prefix": "tch-img",
+    "body": [
+      "<img src=\"$1\" alt=\"$2\">"
+    ],
+    "description": "TCH: Elemento de imagem com alt"
+  },
+  "Âncora (link)": {
+    "prefix": "tch-a",
+    "body": [
+      "<a href=\"$1\" target=\"_blank\" rel=\"noopener noreferrer\">$2</a>"
+    ],
+    "description": "TCH: Link com segurança para nova aba"
+  },
+  "Botão": {
+    "prefix": "tch-btn",
+    "body": [
+      "<button type=\"$1\">$2</button>"
+    ],
+    "description": "TCH: Botão padrão"
+  },
+  "Formulário completo": {
+    "prefix": "tch-form",
+    "body": [
+      "<form action=\"$1\" method=\"$2\">",
+      "  <label for=\"$3\">$4</label>",
+      "  <input type=\"text\" name=\"$3\" id=\"$3\">",
+      "  <button type=\"submit\">Enviar</button>",
+      "</form>"
+    ],
+    "description": "TCH: Formulário com input e botão"
+  },
+  "Input com label": {
+    "prefix": "tch-input",
+    "body": [
+      "<label for=\"$1\">$2</label>",
+      "<input type=\"$3\" name=\"$1\" id=\"$1\">"
+    ],
+    "description": "TCH: Input com rótulo associado"
+  },
+  "Textarea": {
+    "prefix": "tch-textarea",
+    "body": [
+      "<label for=\"$1\">$2</label>",
+      "<textarea name=\"$1\" id=\"$1\" cols=\"30\" rows=\"10\">$3</textarea>"
+    ],
+    "description": "TCH: Campo de texto longo"
+  },
+  "Select com opções": {
+    "prefix": "tch-select",
+    "body": [
+      "<label for=\"$1\">$2</label>",
+      "<select name=\"$1\" id=\"$1\">",
+      "  <option value=\"\">Selecione...</option>",
+      "  <option value=\"$3\">$4</option>",
+      "</select>"
+    ],
+    "description": "TCH: Dropdown com opções"
+  },
+  "Lista não ordenada": {
+    "prefix": "tch-ul",
+    "body": [
+      "<ul>",
+      "  <li>$1</li>",
+      "  <li>$2</li>",
+      "</ul>"
+    ],
+    "description": "TCH: Lista com marcadores"
+  },
+  "Lista ordenada": {
+    "prefix": "tch-ol",
+    "body": [
+      "<ol>",
+      "  <li>$1</li>",
+      "  <li>$2</li>",
+      "</ol>"
+    ],
+    "description": "TCH: Lista numerada"
+  },
+  "Tabela completa": {
+    "prefix": "tch-table",
+    "body": [
+      "<table>",
+      "  <thead>",
+      "    <tr>",
+      "      <th>$1</th>",
+      "      <th>$2</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <td>$3</td>",
+      "      <td>$4</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>"
+    ],
+    "description": "TCH: Tabela com cabeçalho e corpo"
+  },
+  "Div com classe": {
+    "prefix": "tch-divc",
+    "body": [
+      "<div class=\"$1\">",
+      "  $2",
+      "</div>"
+    ],
+    "description": "TCH: Div com class"
+  },
+  "Span": {
+    "prefix": "tch-span",
+    "body": [
+      "<span>$1</span>"
+    ],
+    "description": "TCH: Elemento inline"
+  },
+  "Header": {
+    "prefix": "tch-header",
+    "body": [
+      "<header>",
+      "  $1",
+      "</header>"
+    ],
+    "description": "TCH: Cabeçalho da página"
+  },
+  "Main": {
+    "prefix": "tch-main",
+    "body": [
+      "<main>",
+      "  $1",
+      "</main>"
+    ],
+    "description": "TCH: Conteúdo principal"
+  },
+  "Footer": {
+    "prefix": "tch-footer",
+    "body": [
+      "<footer>",
+      "  $1",
+      "</footer>"
+    ],
+    "description": "TCH: Rodapé da página"
+  },
+  "Nav com links": {
+    "prefix": "tch-nav",
+    "body": [
+      "<nav>",
+      "  <ul>",
+      "    <li><a href=\"$1\">$2</a></li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "TCH: Menu de navegação"
+  },
+  "Section com título e parágrafo": {
+    "prefix": "tch-section",
+    "body": [
+      "<section>",
+      "  <h2>$1</h2>",
+      "  <p>$2</p>",
+      "</section>"
+    ],
+    "description": "TCH: Seção com conteúdo"
+  },
+  "Article com conteúdo": {
+    "prefix": "tch-article",
+    "body": [
+      "<article>",
+      "  <h2>$1</h2>",
+      "  <p>$2</p>",
+      "</article>"
+    ],
+    "description": "TCH: Artigo com conteúdo semântico"
+  },
+  "Figure com legenda": {
+    "prefix": "tch-figure",
+    "body": [
+      "<figure>",
+      "  <img src=\"$1\" alt=\"$2\">",
+      "  <figcaption>$3</figcaption>",
+      "</figure>"
+    ],
+    "description": "TCH: Imagem com legenda descritiva"
+  },
+  "Vídeo com controles": {
+    "prefix": "tch-video",
+    "body": [
+      "<video controls width=\"$1\">",
+      "  <source src=\"$2\" type=\"video/mp4\">",
+      "  Seu navegador não suporta vídeo.",
+      "</video>"
+    ],
+    "description": "TCH: Vídeo com suporte e fallback"
+  },
+  "Áudio com controles": {
+    "prefix": "tch-audio",
+    "body": [
+      "<audio controls>",
+      "  <source src=\"$1\" type=\"audio/mpeg\">",
+      "  Seu navegador não suporta áudio.",
+      "</audio>"
+    ],
+    "description": "TCH: Áudio com suporte nativo"
+  },
+  "Details e Summary": {
+    "prefix": "tch-details",
+    "body": [
+      "<details>",
+      "  <summary>$1</summary>",
+      "  <p>$2</p>",
+      "</details>"
+    ],
+    "description": "TCH: Bloco expandível"
+  },
+  "Template reutilizável": {
+    "prefix": "tch-template",
+    "body": [
+      "<template id=\"$1\">",
+      "  $2",
+      "</template>"
+    ],
+    "description": "TCH: Template HTML oculto para JS"
+  },
+  "Meta SEO padrão": {
+    "prefix": "tch-metaseo",
+    "body": [
+      "<meta name=\"description\" content=\"$1\">",
+      "<meta name=\"keywords\" content=\"$2\">",
+      "<meta name=\"author\" content=\"$3\">"
+    ],
+    "description": "TCH: Meta tags básicas para SEO"
+  },
+  "Meta social (Open Graph)": {
+    "prefix": "tch-ogmeta",
+    "body": [
+      "<meta property=\"og:title\" content=\"$1\">",
+      "<meta property=\"og:description\" content=\"$2\">",
+      "<meta property=\"og:image\" content=\"$3\">",
+      "<meta property=\"og:url\" content=\"$4\">",
+      "<meta property=\"og:type\" content=\"website\">"
+    ],
+    "description": "TCH: Open Graph para redes sociais"
+  }
+}

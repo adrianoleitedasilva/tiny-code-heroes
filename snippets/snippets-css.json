@@ -1,0 +1,286 @@
+{
+  "Reset universal": {
+    "prefix": "tch-reset",
+    "body": [
+      "* {",
+      "  margin: 0;",
+      "  padding: 0;",
+      "  box-sizing: border-box;",
+      "}"
+    ],
+    "description": "TCH: Reset básico global"
+  },
+  "Box sizing border-box": {
+    "prefix": "tch-boxborder",
+    "body": [
+      "box-sizing: border-box;"
+    ],
+    "description": "TCH: Evita quebra de layout"
+  },
+  "Container centralizado": {
+    "prefix": "tch-container",
+    "body": [
+      ".container {",
+      "  max-width: 1200px;",
+      "  margin: 0 auto;",
+      "  padding: 0 20px;",
+      "}"
+    ],
+    "description": "TCH: Container com largura máxima"
+  },
+  "Display Flex": {
+    "prefix": "tch-df",
+    "body": [
+      "display: flex;"
+    ],
+    "description": "TCH: Ativa flexbox"
+  },
+  "Flex completo (alinhado)": {
+    "prefix": "tch-flexcenter",
+    "body": [
+      "display: flex;",
+      "justify-content: center;",
+      "align-items: center;"
+    ],
+    "description": "TCH: Flexbox centralizado"
+  },
+  "Flex Column": {
+    "prefix": "tch-flexcol",
+    "body": [
+      "display: flex;",
+      "flex-direction: column;"
+    ],
+    "description": "TCH: Flexbox em coluna"
+  },
+  "Flex Wrap": {
+    "prefix": "tch-flexwrap",
+    "body": [
+      "flex-wrap: wrap;"
+    ],
+    "description": "TCH: Flexbox com quebra"
+  },
+  "Grid básico 2 colunas": {
+    "prefix": "tch-grid2",
+    "body": [
+      "display: grid;",
+      "grid-template-columns: 1fr 1fr;",
+      "gap: 20px;"
+    ],
+    "description": "TCH: Layout em grid com duas colunas"
+  },
+  "Grid responsivo": {
+    "prefix": "tch-gridauto",
+    "body": [
+      "display: grid;",
+      "grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));",
+      "gap: 16px;"
+    ],
+    "description": "TCH: Grid que se adapta ao espaço"
+  },
+  "Position Absolute center": {
+    "prefix": "tch-centerabs",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform: translate(-50%, -50%);"
+    ],
+    "description": "TCH: Centralização absoluta"
+  },
+  "Position Fixed": {
+    "prefix": "tch-fixed",
+    "body": [
+      "position: fixed;",
+      "top: 0;",
+      "left: 0;",
+      "width: 100%;"
+    ],
+    "description": "TCH: Elemento fixo no topo"
+  },
+  "Z-index": {
+    "prefix": "tch-zindex",
+    "body": [
+      "z-index: $1;"
+    ],
+    "description": "TCH: Ordem de sobreposição"
+  },
+  "Fonte padrão": {
+    "prefix": "tch-font",
+    "body": [
+      "font-family: 'Arial', sans-serif;",
+      "font-size: 16px;"
+    ],
+    "description": "TCH: Fonte comum"
+  },
+  "Text Transform Uppercase": {
+    "prefix": "tch-ttu",
+    "body": [
+      "text-transform: uppercase;"
+    ],
+    "description": "TCH: Texto em maiúsculas"
+  },
+  "Font Weight": {
+    "prefix": "tch-fw",
+    "body": [
+      "font-weight: $1;"
+    ],
+    "description": "TCH: Peso da fonte"
+  },
+  "Color e Background": {
+    "prefix": "tch-cbg",
+    "body": [
+      "color: $1;",
+      "background-color: $2;"
+    ],
+    "description": "TCH: Cor do texto e fundo"
+  },
+  "Gradiente Linear": {
+    "prefix": "tch-gradient",
+    "body": [
+      "background: linear-gradient(90deg, $1, $2);"
+    ],
+    "description": "TCH: Gradiente horizontal"
+  },
+  "Background com imagem": {
+    "prefix": "tch-bgimg",
+    "body": [
+      "background-image: url('$1');",
+      "background-size: cover;",
+      "background-position: center;"
+    ],
+    "description": "TCH: Imagem de fundo responsiva"
+  },
+  "Margin e Padding": {
+    "prefix": "tch-mp",
+    "body": [
+      "margin: $1;",
+      "padding: $2;"
+    ],
+    "description": "TCH: Espaçamento interno e externo"
+  },
+  "Borda arredondada": {
+    "prefix": "tch-radius",
+    "body": [
+      "border-radius: 8px;"
+    ],
+    "description": "TCH: Bordas arredondadas"
+  },
+  "Box Shadow": {
+    "prefix": "tch-shadow",
+    "body": [
+      "box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+    ],
+    "description": "TCH: Sombra suave"
+  },
+  "Transição suave": {
+    "prefix": "tch-transition",
+    "body": [
+      "transition: all 0.3s ease;"
+    ],
+    "description": "TCH: Animação suave de propriedades"
+  },
+  "Keyframes": {
+    "prefix": "tch-keyframes",
+    "body": [
+      "@keyframes $1 {",
+      "  0% { $2 }",
+      "  100% { $3 }",
+      "}"
+    ],
+    "description": "TCH: Bloco de animação"
+  },
+  "Animation simples": {
+    "prefix": "tch-anim",
+    "body": [
+      "animation: $1 1s ease-in-out infinite;"
+    ],
+    "description": "TCH: Aplica uma animação"
+  },
+  "Cursor pointer": {
+    "prefix": "tch-pointer",
+    "body": [
+      "cursor: pointer;"
+    ],
+    "description": "TCH: Muda cursor ao passar o mouse"
+  },
+  "Text Ellipsis (truncado)": {
+    "prefix": "tch-ellipsis",
+    "body": [
+      "white-space: nowrap;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;"
+    ],
+    "description": "TCH: Texto cortado com reticências"
+  },
+  "Media Query padrão": {
+    "prefix": "tch-media",
+    "body": [
+      "@media (max-width: 768px) {",
+      "  $1",
+      "}"
+    ],
+    "description": "TCH: Responsivo para mobile"
+  },
+  "Variável CSS": {
+    "prefix": "tch-var",
+    "body": [
+      "--$1: $2;"
+    ],
+    "description": "TCH: Declaração de variável"
+  },
+  "Uso de variável CSS": {
+    "prefix": "tch-usevar",
+    "body": [
+      "color: var(--$1);"
+    ],
+    "description": "TCH: Uso de variável declarada"
+  },
+  "Display none": {
+    "prefix": "tch-dn",
+    "body": [
+      "display: none;"
+    ],
+    "description": "TCH: Oculta o elemento"
+  },
+  "Display block": {
+    "prefix": "tch-db",
+    "body": [
+      "display: block;"
+    ],
+    "description": "TCH: Exibe como bloco"
+  },
+  "Display inline": {
+    "prefix": "tch-di",
+    "body": [
+      "display: inline;"
+    ],
+    "description": "TCH: Exibe como inline"
+  },
+  "Display inline-block": {
+    "prefix": "tch-dib",
+    "body": [
+      "display: inline-block;"
+    ],
+    "description": "TCH: Bloco com comportamento inline"
+  },
+  "Opacity": {
+    "prefix": "tch-opacity",
+    "body": [
+      "opacity: $1;"
+    ],
+    "description": "TCH: Define opacidade"
+  },
+  "Scrollbar personalizada": {
+    "prefix": "tch-scrollbar",
+    "body": [
+      "::-webkit-scrollbar {",
+      "  width: 8px;",
+      "}",
+      "::-webkit-scrollbar-thumb {",
+      "  background-color: #ccc;",
+      "  border-radius: 4px;",
+      "}"
+    ],
+    "description": "TCH: Estilo para scrollbar no Chrome"
+  }
+}

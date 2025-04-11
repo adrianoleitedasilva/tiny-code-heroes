@@ -1,0 +1,188 @@
+{
+  "Console Log": {
+    "prefix": "tch-clg",
+    "body": ["console.log($1);"],
+    "description": "TCH: Exibe dados no console"
+  },
+  "Console Table": {
+    "prefix": "tch-ctable",
+    "body": ["console.table($1);"],
+    "description": "TCH: Exibe dados em formato tabular"
+  },
+  "Function Declaration": {
+    "prefix": "tch-fn",
+    "body": ["function $1($2) {", "  $3", "}"],
+    "description": "TCH: Função tradicional"
+  },
+  "Arrow Function": {
+    "prefix": "tch-afn",
+    "body": ["const $1 = ($2) => {", "  $3", "};"],
+    "description": "TCH: Função arrow moderna"
+  },
+  "Async Arrow Function": {
+    "prefix": "tch-asyncafn",
+    "body": [
+      "const $1 = async ($2) => {",
+      "  try {",
+      "    $3",
+      "  } catch (error) {",
+      "    console.error(error);",
+      "  }",
+      "};"
+    ],
+    "description": "TCH: Função assíncrona com tratamento de erro"
+  },
+  "If/Else": {
+    "prefix": "tch-ifelse",
+    "body": ["if ($1) {", "  $2", "} else {", "  $3", "}"],
+    "description": "TCH: Estrutura condicional"
+  },
+  "Switch Case": {
+    "prefix": "tch-switch",
+    "body": [
+      "switch ($1) {",
+      "  case '$2':",
+      "    $3",
+      "    break;",
+      "  default:",
+      "    $4",
+      "}"
+    ],
+    "description": "TCH: Decisão com múltiplos caminhos"
+  },
+  "For Loop": {
+    "prefix": "tch-for",
+    "body": ["for (let i = 0; i < $1; i++) {", "  $2", "}"],
+    "description": "TCH: Laço clássico"
+  },
+  "While Loop": {
+    "prefix": "tch-while",
+    "body": ["while ($1) {", "  $2", "}"],
+    "description": "TCH: Laço while"
+  },
+  "Do While Loop": {
+    "prefix": "tch-dowhile",
+    "body": ["do {", "  $1", "} while ($2);"],
+    "description": "TCH: Executa ao menos uma vez"
+  },
+  "Array ForEach": {
+    "prefix": "tch-foreach",
+    "body": ["$1.forEach(($2) => {", "  $3", "});"],
+    "description": "TCH: Iteração com forEach"
+  },
+  "Array Map": {
+    "prefix": "tch-map",
+    "body": ["const $2 = $1.map(($3) => {", "  return $4;", "});"],
+    "description": "TCH: Cria novo array com transformação"
+  },
+  "Array Filter": {
+    "prefix": "tch-filter",
+    "body": ["const $2 = $1.filter(($3) => {", "  return $4;", "});"],
+    "description": "TCH: Filtra array com condição"
+  },
+  "Array Reduce": {
+    "prefix": "tch-reduce",
+    "body": [
+      "const $2 = $1.reduce(($3, $4) => {",
+      "  return $5;",
+      "}, $6);"
+    ],
+    "description": "TCH: Reduz array a um valor"
+  },
+  "Query Selector": {
+    "prefix": "tch-qs",
+    "body": ["document.querySelector('$1');"],
+    "description": "TCH: Seleciona primeiro elemento correspondente"
+  },
+  "Query Selector All": {
+    "prefix": "tch-qsa",
+    "body": ["document.querySelectorAll('$1');"],
+    "description": "TCH: Seleciona todos os elementos correspondentes"
+  },
+  "Add Event Listener": {
+    "prefix": "tch-addevent",
+    "body": [
+      "document.querySelector('$1').addEventListener('$2', (e) => {",
+      "  $3",
+      "});"
+    ],
+    "description": "TCH: Escuta eventos DOM"
+  },
+  "Set Timeout": {
+    "prefix": "tch-timeout",
+    "body": ["setTimeout(() => {", "  $1", "}, $2);"],
+    "description": "TCH: Executa depois de um tempo"
+  },
+  "Set Interval": {
+    "prefix": "tch-interval",
+    "body": ["setInterval(() => {", "  $1", "}, $2);"],
+    "description": "TCH: Executa continuamente em intervalos"
+  },
+  "Try/Catch": {
+    "prefix": "tch-trycatch",
+    "body": ["try {", "  $1", "} catch (error) {", "  console.error(error);", "}"],
+    "description": "TCH: Tratamento de exceções"
+  },
+  "Fetch API": {
+    "prefix": "tch-fetch",
+    "body": [
+      "fetch('$1')",
+      "  .then(response => response.json())",
+      "  .then(data => {",
+      "    console.log(data);",
+      "  })",
+      "  .catch(error => console.error('Erro:', error));"
+    ],
+    "description": "TCH: Requisição com Fetch API"
+  },
+  "Local Storage Get": {
+    "prefix": "tch-lsget",
+    "body": ["const $1 = localStorage.getItem('$2');"],
+    "description": "TCH: Lê do localStorage"
+  },
+  "Local Storage Set": {
+    "prefix": "tch-lsset",
+    "body": ["localStorage.setItem('$1', $2);"],
+    "description": "TCH: Salva no localStorage"
+  },
+  "Class JS": {
+    "prefix": "tch-class",
+    "body": [
+      "class $1 {",
+      "  constructor($2) {",
+      "    $3",
+      "  }",
+      "",
+      "  $4() {",
+      "    $5",
+      "  }",
+      "}"
+    ],
+    "description": "TCH: Declaração de classe"
+  },
+  "Export Default": {
+    "prefix": "tch-export",
+    "body": ["export default $1;"],
+    "description": "TCH: Exportação padrão"
+  },
+  "Import ES6": {
+    "prefix": "tch-import",
+    "body": ["import $1 from '$2';"],
+    "description": "TCH: Importação de módulo"
+  },
+  "Document Ready (DOM Loaded)": {
+    "prefix": "tch-domready",
+    "body": ["document.addEventListener('DOMContentLoaded', () => {", "  $1", "});"],
+    "description": "TCH: Executa quando DOM estiver carregado"
+  },
+  "Gerar número aleatório": {
+    "prefix": "tch-rand",
+    "body": ["Math.floor(Math.random() * $1);"],
+    "description": "TCH: Número aleatório inteiro"
+  },
+  "Verificar tipo": {
+    "prefix": "tch-typeof",
+    "body": ["typeof $1;"],
+    "description": "TCH: Tipo da variável"
+  }
+}
