@@ -17,8 +17,9 @@
   },
   "icon": "logo.png",
   "activationEvents": [
-  "*"
-],
+    "onView:tch.view",
+    "onCommand:tch.showSnippets"
+  ],
   "contributes": {
     "snippets": [
       {
