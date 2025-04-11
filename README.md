@@ -38,7 +38,7 @@ Aqui vão alguns atalhos que seus heróis podem ativar:
 
 1. Instale a extensão **Tiny Code Heroes** pela Visual Studio Code Marketplace.
 2. Abra um arquivo `.html`, `.css` ou `.js`.
-3. Digite um dos prefixos, como `html5`, `flexcenter` ou `clg`.
+3. Digite um dos prefixos, como `tch-html5`, `tch-reset` ou `tch-clg`.
 4. Pressione `Tab` ou `Enter` e veja a mágica acontecer.
 
 ---
