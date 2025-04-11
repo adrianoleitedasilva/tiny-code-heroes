@@ -47,3 +47,8 @@ Aqui vão alguns atalhos que seus heróis podem ativar:
 
 Quer criar seus próprios snippets ou editar os existentes? Basta abrir a paleta de comandos (`Ctrl+Shift+P` ou `Cmd+Shift+P`) e escolher:
 
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob os termos da [MIT License](LICENSE.md).
