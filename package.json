@@ -2,8 +2,9 @@
   "name": "tiny-code-heroes",
   "displayName": "Tiny Code Heroes",
   "description": "Essa extensão traz uma coleção poderosa de snippets HTML, CSS e JavaScript, perfeitos para quem quer codar mais rápido, com estilo e sem perder a sanidade. Digite um atalho, invoque seu snippet, e continue sua jornada de desenvolvimento como o verdadeiro herói que você é.",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "publisher": "adrianoleitedasilva",
+  "main": "./src/extension.js",
   "engines": {
     "vscode": "^1.99.0"
   },
@@ -14,10 +15,7 @@
     "type": "git",
     "url": "https://github.com/adrianoleitedasilva/tiny-code-heroes.git"
   },
-  "icon": "media/logo.png",
-  "activationEvents": [
-    "*"
-  ],
+  "icon": "logo.png",
   "contributes": {
     "snippets": [
       {

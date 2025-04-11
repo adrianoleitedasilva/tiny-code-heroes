@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Extensão empacotada
+*.vsix
+
+# Arquivos de build TypeScript (se usar ts)
+out/
+dist/
+*.tsbuildinfo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e cache
+*.log
+.cache/
